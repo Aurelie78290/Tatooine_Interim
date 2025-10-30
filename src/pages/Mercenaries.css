@@ -1,0 +1,82 @@
+body {
+	background-color: #3a3231;
+}
+
+.mercenaries-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 3rem;
+	margin: 3rem 0px;
+
+	h1 {
+		color: #d4a976;
+		font-family: "Orbitron", sans-serif;
+	}
+}
+
+.search-section {
+	gap: 0.5em;
+	p {
+		color: #839297;
+		text-align: start;
+	}
+}
+.search-filters {
+	display: flex;
+	gap: 1.5rem;
+	flex-wrap: wrap;
+}
+
+.mercenaries-general {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 2em 1em;
+
+	.mercenary-GlobalCard {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		min-height: 180px;
+		width: 200px;
+		background-color: #839297;
+		gap: 0.5em;
+		border: 1px solid #4c5051;
+		border-radius: 8px;
+		overflow: hidden;
+		box-shadow: 0 0 8px #4c5051;
+		transition:
+			transform 0.2s ease,
+			box-shadow 0.3s ease;
+
+		img {
+			margin-top: 1rem;
+			width: 180px;
+			height: 240px;
+			object-fit: cover;
+			object-position: center top;
+			display: block;
+		}
+
+		h2 {
+			font-size: 1.2rem;
+			color: #3a3231;
+		}
+
+		p {
+			font-size: 0.9rem;
+			color: #4c5051;
+		}
+
+		button {
+			background-color: #d4a976;
+			border-radius: 5%;
+			color: #3a3231;
+			font-weight: bold;
+			margin-bottom: 1rem;
+		}
+	}
+}
