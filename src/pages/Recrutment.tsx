@@ -1,5 +1,12 @@
+import CardRecrutment from "../components/CardRecrutment";
+
 function Recrutment() {
-	return <h1>Recrutment page</h1>;
+	return (
+		<div>
+			<h1>Recrutment page</h1>
+			<CardRecrutment />
+		</div>
+	);
 }
 
 export default Recrutment;
