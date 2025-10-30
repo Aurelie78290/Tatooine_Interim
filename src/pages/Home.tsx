@@ -1,5 +1,10 @@
+import { useContext } from 'react';
+import DataContext from '../contexts/DataContext';
 function Home() {
-	return <h1>Home page</h1>;
+const { data } = useContext(DataContext);
+
+	return <h1>{console.log(data)} Home page</h1>;
+
 }
 
 export default Home;
