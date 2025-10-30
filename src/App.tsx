@@ -1,7 +1,7 @@
 import { Link, Outlet } from "react-router";
+import Accordeon from "./assets/components/accordeon";
 
 import "./App.css";
-
 function App() {
 	return (
 		<>
@@ -15,6 +15,7 @@ function App() {
 			</nav>
 			<main>
 				<Outlet />
+				<Accordeon />
 			</main>
 		</>
 	);
