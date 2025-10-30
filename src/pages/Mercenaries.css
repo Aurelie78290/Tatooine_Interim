@@ -6,7 +6,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 3rem;
+	gap: 2rem;
 	margin: 3rem 0px;
 
 	h1 {
@@ -16,67 +16,158 @@ body {
 }
 
 .search-section {
-	gap: 0.5em;
+	width: 800px;
+	display: flex;
+	flex-direction: column;
+	gap: 0.2em;
 	p {
 		color: #839297;
 		text-align: start;
+		font-family: "roboto";
+		font-style: italic;
+		font-size: 1.3rem;
 	}
 }
 .search-filters {
 	display: flex;
-	gap: 1.5rem;
+	justify-content: space-between;
+	align-items: center;
 	flex-wrap: wrap;
+}
+
+.search-input {
+	height: 2rem;
+	border-radius: 8px;
+	background-color: #d4a976;
+	color: #3a3231;
+	font-family: "roboto";
+	padding: 0 1em;
+}
+
+.filter-select {
+	height: 2.5rem;
+	border-radius: 8px;
+	background-color: #d4a976;
+	color: #3a3231;
+	font-family: "roboto";
+	font-weight: 600;
+	padding: 0 1em;
 }
 
 .mercenaries-general {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	gap: 2em 1em;
+	margin: 1em 18em;
+	gap: 2em 2em;
+}
 
-	.mercenary-GlobalCard {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		text-align: center;
-		min-height: 180px;
-		width: 200px;
-		background-color: #839297;
-		gap: 0.5em;
-		border: 1px solid #4c5051;
+.reset-button {
+	color: #d4a976;
+	display: flex;
+	align-items: center;
+	height: 3em;
+	font-size: 0.9rem;
+	font-weight: 600;
+	font-family: "roboto";
+}
+
+.reset-button:hover {
+	color: #3a3231;
+}
+
+.mercenary-GlobalCard {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	min-height: 180px;
+	width: 200px;
+	background-color: #9ca6a9;
+	gap: 0.5em;
+	border: none;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 0 8px rgba(245, 216, 92, 0.15);
+	transition:
+		transform 0.3s ease,
+		box-shadow 0.5s ease;
+	position: relative;
+	animation: saber-glow 5s ease-in-out infinite;
+
+	img {
+		margin-top: 1rem;
+		width: 180px;
+		height: 240px;
+		object-fit: cover;
+		object-position: center top;
+		display: block;
 		border-radius: 8px;
-		overflow: hidden;
-		box-shadow: 0 0 8px #4c5051;
-		transition:
-			transform 0.2s ease,
-			box-shadow 0.3s ease;
+	}
 
-		img {
-			margin-top: 1rem;
-			width: 180px;
-			height: 240px;
-			object-fit: cover;
-			object-position: center top;
-			display: block;
-		}
+	h2 {
+		font-size: 1.2rem;
+		color: #3a3231;
+	}
 
-		h2 {
-			font-size: 1.2rem;
-			color: #3a3231;
-		}
+	p {
+		font-size: 0.9rem;
+		color: #4c5051;
+		font-family: "roboto";
+	}
 
-		p {
-			font-size: 0.9rem;
-			color: #4c5051;
-		}
+	button {
+		background-color: #d4a976;
+		border-radius: 8px;
+		color: #3a3231;
+		font-weight: bold;
+		font-family: "roboto";
+		margin-bottom: 1rem;
+		padding: 10px 16px;
+	}
+}
 
-		button {
-			background-color: #d4a976;
-			border-radius: 5%;
-			color: #3a3231;
-			font-weight: bold;
-			margin-bottom: 1rem;
-		}
+.mercenary-GlobalCard:hover {
+	transform: translateY(-6px) scale(1.05);
+	box-shadow:
+		0 0 15px rgba(245, 216, 92, 0.6),
+		0 0 35px rgba(245, 216, 92, 0.4),
+		0 0 60px rgba(245, 216, 92, 0.3),
+		inset 0 0 20px rgba(245, 216, 92, 0.25);
+	z-index: 2;
+	transition:
+		transform 0.3s ease,
+		box-shadow 0.4s ease;
+}
+
+.mercenary-GlobalCard img {
+	filter: saturate(0.9) brightness(0.95);
+	transition: filter 0.3s ease;
+}
+
+.mercenary-GlobalCard:hover img {
+	filter: saturate(1.1) brightness(1.05);
+}
+
+.mercenary-GlobalCard button:hover {
+	background-color: #4c5051;
+	color: #d4a976;
+	transform: scale(1.05);
+}
+
+@keyframes saber-glow {
+	0%,
+	100% {
+		box-shadow:
+			0 0 10px rgba(245, 216, 92, 0.25),
+			0 0 20px rgba(245, 216, 92, 0.15),
+			0 0 30px rgba(245, 216, 92, 0.1);
+	}
+	50% {
+		box-shadow:
+			0 0 15px rgba(245, 216, 92, 0.35),
+			0 0 35px rgba(245, 216, 92, 0.25),
+			0 0 60px rgba(245, 216, 92, 0.15);
 	}
 }

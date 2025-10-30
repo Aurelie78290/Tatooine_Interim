@@ -24,9 +24,9 @@ function Mercenaries() {
 
 	return (
 		<section className="mercenaries-section">
-			<h1>Nos Mercenaires</h1>
+			<h1>Registre des Mercenaires</h1>
 			<div className="search-section">
-				<p>Rechercher par nom ou espèce et/ou planète</p>
+				<p>Recherchez votre prochain héros (ou voyou)... </p>
 
 				<div className="search-filters">
 					<input
@@ -81,7 +81,7 @@ function Mercenaries() {
 						<p>
 							👽 {mercenary.species} &nbsp; 🌍 {mercenary.homeworld}
 						</p>
-						<button>Sa fiche</button>
+						<button>Fiche du Mandale</button>
 					</article>
 				))}
 			</div>
