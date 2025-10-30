@@ -1,9 +1,16 @@
-import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router";
+import ReactDOM from "react-dom/client";
 
 import App from "./App.tsx";
 
 import "./index.css";
+
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Home from "./pages/Home";
+import Mercenaries from "./pages/Mercenaries.tsx";
+import MercenaryDetails from "./pages/MercenaryDetails.tsx";
+import Recrutment from "./pages/Recrutment.tsx";
 
 const router = createBrowserRouter([
 	{
@@ -13,12 +20,32 @@ const router = createBrowserRouter([
 				path: "/",
 				element: <Home />,
 			},
+			{
+				path: "/pages/Mercenaries",
+				element: <Mercenaries />,
+			},
+			{
+				path: "/pages/MercenaryDetails",
+				element: <MercenaryDetails />,
+			},
+			{
+				path: "/pages/Recrutment",
+				element: <Recrutment />,
+			},
+			{
+				path: "/pages/About",
+				element: <About />,
+			},
+			{
+				path: "/pages/Contact",
+				element: <Contact />,
+			},
 		],
 	},
 ]);
 
 const rootElement = document.getElementById("root");
 
-if (rootElement == null) {
-	throw new Error(`Your HTML Document must contain a <div id="root"></div>`);
+if (rootElement != null) {
+	ReactDOM.createRoot(rootElement).render(<RouterProvider router={router} />);
 }
