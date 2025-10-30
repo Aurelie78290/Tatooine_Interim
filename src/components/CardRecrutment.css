@@ -29,6 +29,10 @@
 	}
 }
 
+.reverse {
+	flex-direction: row-reverse;
+}
+
 .article-card-recruitment {
 	background-color: #4c5051;
 	max-width: 400px;
