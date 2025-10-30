@@ -1,3 +1,4 @@
+import "./Footer.css"
 
 interface FooterProps {
   companyName?: string;
