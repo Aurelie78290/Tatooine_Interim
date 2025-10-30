@@ -1,10 +1,24 @@
-import { useContext } from 'react';
-import DataContext from '../contexts/DataContext';
+{/* import composant */}
+import BentoGrid from "../components/BentoGrid";
+import Hero from "../components/Hero";
+{/* import css */}
+import "./Home.css";
+{/* import img */}
+import bgHome from "../assets/bgHome.jpg"
+
 function Home() {
-const { data } = useContext(DataContext);
+	return (
+		<>
+		<Hero 
+		title="Tatooine Interim"
+		subtitle="Une mandale ou rien"
+		background={bgHome}/>
 
-	return <h1>{console.log(data)} Home page</h1>;
+	<h2>About stuff</h2>
+	<BentoGrid />
 
+
+	</>);
 }
 
 export default Home;
