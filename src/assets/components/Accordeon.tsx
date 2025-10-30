@@ -13,7 +13,7 @@ function AccordionGroup() {
 		{
 			id: 1,
 			title: "Depuis quand on est là",
-			content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+			content: "Lorem ipsum dolor sit amet,",
 		},
 		{
 			id: 2,
