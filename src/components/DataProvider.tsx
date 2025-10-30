@@ -1,6 +1,13 @@
 import type React from 'react';
 import {useState, useEffect} from 'react';
-import DataContext, {DataContextState} from '../contexts/DataContext';
+import DataContext from '../contexts/DataContext';
+
+interface DataContextState {
+  data: any | null;
+  setData: (data: any) => void;
+  isLoading: boolean;
+  error: Error | null;
+}
 
 type DataProviderProps = {
     children: React.ReactNode;  
@@ -8,7 +15,7 @@ type DataProviderProps = {
 
 export const DataProvider = ({ children }: DataProviderProps) => {
 
-    const [data, setData] = useState<JSON | null>(null);
+    const [data, setData] = useState<any | null>(null);
     const [isLoading, setIsLoading] = useState<boolean>(true);
     const [error, setError] = useState<Error | null>(null);
 
@@ -16,7 +23,7 @@ export const DataProvider = ({ children }: DataProviderProps) => {
 
         const fetchData = async () => {
             try {
-                const response = await fetch('https://miadil.github.io/starwars-api/api');
+                const response = await fetch('https://miadil.github.io/starwars-api/api/all.json');
                 if (!response.ok) {throw new Error(`Erreur HTTP: ${response.status}`);
             }
             const jsonData = await response.json();
@@ -30,14 +37,15 @@ export const DataProvider = ({ children }: DataProviderProps) => {
     fetchData();
 }, []);
 
-    const value: DataContextState = {
-        data,
-        isLoading,
-        error
-    };
+const value: DataContextState = {
+      data,
+    isLoading,
+    error,
+    setData
+};
 
     return (
-        <DataContext.Provider value={value}>
+        <DataContext.Provider value={value as unknown as any}>
             {children}
         </DataContext.Provider>
     );
