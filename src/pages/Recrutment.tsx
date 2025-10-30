@@ -1,4 +1,5 @@
 import CardRecrutment from "../components/CardRecrutment";
+import Hero from "../components/Hero";
 
 const dataCardPrez = {
 	titreh2: "Recruitment",
@@ -29,7 +30,11 @@ const dataCardPrez2 = {
 function Recrutment() {
 	return (
 		<div>
-			<h1>Recrutment page</h1>
+			<Hero
+				title="Tatooine Interim"
+				subtitle="Une mandale ou rien"
+				background="../src/assets/bgHome.jpg"
+			/>
 			<CardRecrutment dataCardPrez={dataCardPrez} />
 			<CardRecrutment dataCardPrez={dataCardPrez2} />
 		</div>
