@@ -2,7 +2,7 @@ import "./Accordeon.css";
 
 import { useState } from "react";
 
-function AccordionGroup() {
+function Accordeon() {
 	const [openIndex, setOpenIndex] = useState(null);
 
 	const toggle = (index: any) => {
@@ -48,7 +48,8 @@ function AccordionGroup() {
 					<summary className="accordion-summary">
 						<span>{item.title}</span>
 						<span
-							className={`accordion-arrow ${openIndex === i ? "open" : ""}`}>
+							className={`accordion-arrow ${openIndex === i ? "open" : ""}`}
+						>
 							›
 						</span>
 					</summary>
@@ -117,4 +118,4 @@ function AccordionGroup() {
 // 		</div>
 // 	);
 // }
-export default AccordionGroup;
+export default Accordeon;
