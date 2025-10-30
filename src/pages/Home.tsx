@@ -1,12 +1,20 @@
+{/* import composant */}
 import BentoGrid from "../components/BentoGrid";
+import Hero from "../components/Hero";
+{/* import css */}
 import "./Home.css";
+{/* import img */}
+import bgHome from "../assets/bgHome.jpg"
 
 function Home() {
 	return (
 		<>
-	<h1>Tatooine interim</h1>
-	<h2>Une mandale ou rien</h2>	
-	<h2>Prestations jsp</h2>
+		<Hero 
+		title="Tatooine Interim"
+		subtitle="Une mandale ou rien"
+		background={bgHome}/>
+
+	<h2>About stuff</h2>
 	<BentoGrid />
 
 

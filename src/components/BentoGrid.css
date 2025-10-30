@@ -49,9 +49,11 @@
 }
 
 .card_cta  {
-    grid-area:cta; justify-self:start;
-    padding:.6rem 1rem; border:0; border-radius:999px;
-    background: var(--link); color:#fff; font-weight:700;
+    grid-area:cta; 
+    justify-self:start;
+    background: var(--link); 
+    color:#fff; 
+    font-weight:700;
 }
 
 .card_cta:hover{ background: var(--linkv); }
