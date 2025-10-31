@@ -31,7 +31,7 @@ function Recrutment() {
 	return (
 		<div>
 			<Hero
-				title="Tatooine Interim"
+				title="Rejoignez-nous!"
 				subtitle="Une mandale ou rien"
 				background="../src/assets/bgHome.jpg"
 			/>
