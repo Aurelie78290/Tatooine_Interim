@@ -7,12 +7,12 @@ function GeneralHeader() {
 		<header className="site-header">
 			<div className="container-header">
 				<NavLink to="/" className="logo-header-link">
-					<img src="../src/assets/logo.png" alt="" className="logo-header" />
+					<img src="../src/assets/logv2.png" alt="" className="logo-header" />
 				</NavLink>
 				<nav className="navbar-header">
 					<NavLink to="/">Home</NavLink>
 					<NavLink to="/pages/Mercenaries">Mercenaries</NavLink>
-					<NavLink to="/pages/MercenaryDetails">Mercenary Details</NavLink>
+					<NavLink to="/pages/NosMissions">Nos missions</NavLink>
 					<NavLink to="/pages/Recrutment">Recruitment</NavLink>
 					<NavLink to="/pages/About">About</NavLink>
 					<NavLink to="/pages/Contact">Contact</NavLink>

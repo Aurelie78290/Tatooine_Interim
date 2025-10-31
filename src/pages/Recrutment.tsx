@@ -10,7 +10,7 @@ const dataCardPrez = {
 	paragraphe:
 		"Chez Tatooine Intérim, on ne cherche pas des héros... juste des gens qui savent tirer droit (ou presque). Si tu as survécu à une cantina un vendredi soir, tu as déjà l’expérience requise. Blaster rouillé, droïde grincheux ou sabre laser d’occasion ? Pas de souci, on recrute tout ce qui respire — ou bippe. Rejoins notre équipe et gagne plus de crédits qu’un contrebandier chanceux !",
 	buttonText: "Contactez-nous",
-	buttonLink: "",
+	buttonLink: "/pages/Contact",
 	reverse: false,
 };
 
@@ -23,7 +23,7 @@ const dataCardPrez2 = {
 	paragraphe:
 		"Chez Tatooine Intérim, ton avenir ne se limite pas à tirer sur des Jawas pour quelques crédits. Commence simple, avec un blaster d’occasion, et grimpe les échelons jusqu’à chef d’escouade interstellaire — ou maître du café, selon ton destin. Grâce à notre programme de formation express, tu apprendras à viser, négocier et survivre aux réunions avec des Hutts. Alors, prêt à transformer ton job de mercenaire en véritable légende galactique ?",
 	buttonText: "Contactez-nous",
-	buttonLink: "/pages/Mercenaries",
+	buttonLink: "/pages/Contact",
 	reverse: true,
 };
 
@@ -31,7 +31,7 @@ function Recrutment() {
 	return (
 		<div>
 			<Hero
-				title="Tatooine Interim"
+				title="Rejoignez-nous!"
 				subtitle="Une mandale ou rien"
 				background="../src/assets/bgHome.jpg"
 			/>
