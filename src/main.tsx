@@ -11,6 +11,7 @@ import Home from "./pages/Home";
 import Mercenaries from "./pages/Mercenaries.tsx";
 import Recrutment from "./pages/Recrutment.tsx";
 import NosMissions from "./pages/NosMissions.tsx";
+import SecretPage from "./pages/SecretPages.tsx";
 
 const router = createBrowserRouter([
 	{
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
 		children: [
 			{
 				path: "/",
+				element: <SecretPage />,
+			},
+			{
+				path: "Home",
 				element: <Home />,
 			},
 			{
