@@ -46,9 +46,3 @@
 		text-align: start;
 	}
 }
-
-/* Checke with Lea  */
-button {
-	padding: 0.5rem 1.5rem;
-	transition: background 0.3s;
-}
