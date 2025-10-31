@@ -13,7 +13,11 @@
 	color: black;
 	width: 800px;
 }
-
+.accordion-content {
+	p {
+		white-space: pre-line;
+	}
+}
 summary {
 	list-style: none;
 }
@@ -34,4 +38,9 @@ summary {
 .accordion-arrow.open {
 	transform: rotate(90deg);
 	color: #4b5563;
+}
+
+.accordion-title {
+	font-weight: 550;
+	font-size: 1.1rem;
 }
