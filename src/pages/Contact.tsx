@@ -49,7 +49,7 @@ function Contact() {
     return (
         <>
             <Hero
-                title="Une mandale ou rien"
+                title="Contactez-nous !"
                 subtitle="Préparer votre mission !"
                 background={bgHome}/>
             <div className="detail-form">

@@ -36,7 +36,7 @@ function Mercenaries() {
 	return (
 		<>
 			<Hero
-				title="Tatooine Interim"
+				title="Mercenaires"
 				subtitle="Une mandale ou rien"
 				background="../src/assets/bgHome.jpg"
 			/>

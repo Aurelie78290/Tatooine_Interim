@@ -30,7 +30,7 @@ function Home() {
 
 	<h2>About stuff</h2>
 	<BentoGrid />
-	<CardRecrutment dataCardPrez={nosServices} />
+	<CardRecrutment display={true} dataCardPrez={nosServices} />
 
 	</>);
 }

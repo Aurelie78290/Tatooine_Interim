@@ -35,12 +35,15 @@ body {
 	flex-wrap: wrap;
 }
 
+.search-input::placeholder{
+	color: #3a3231;
+}
+
 .search-input {
 	height: 2.2rem;
 	border-radius: 8px;
 	background-color: #d4a976;
-	color: #3a3231;
-	font-weight: 600;
+	font-weight: 400;
 	font-size: 0.9rem;
 	font-family: "roboto";
 	width: 30%;

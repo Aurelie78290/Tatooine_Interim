@@ -35,8 +35,8 @@ function Recrutment() {
 				subtitle="Une mandale ou rien"
 				background="../src/assets/bgHome.jpg"
 			/>
-			<CardRecrutment dataCardPrez={dataCardPrez} />
-			<CardRecrutment dataCardPrez={dataCardPrez2} />
+			<CardRecrutment display={true} dataCardPrez={dataCardPrez} />
+			<CardRecrutment display={true} dataCardPrez={dataCardPrez2} />
 		</div>
 	);
 }
