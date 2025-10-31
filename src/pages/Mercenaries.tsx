@@ -26,12 +26,10 @@ function Mercenaries() {
 		<section className="mercenaries-section">
 			<h1>Registre des Mercenaires</h1>
 			<div className="search-section">
-				<p>Recherchez votre prochain héros (ou voyou)... </p>
-
 				<div className="search-filters">
 					<input
 						type="text"
-						placeholder="Rechercher par nom..."
+						placeholder="Recherchez votre prochain héros (ou voyou)..."
 						value={searchTerm}
 						onChange={(e) => setSearchTerm(e.target.value)}
 						className="search-input"

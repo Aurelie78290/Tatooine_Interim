@@ -16,7 +16,7 @@ body {
 }
 
 .search-section {
-	width: 800px;
+	width: 950px;
 	display: flex;
 	flex-direction: column;
 	gap: 0.2em;
@@ -36,11 +36,12 @@ body {
 }
 
 .search-input {
-	height: 2rem;
+	height: 2.2rem;
 	border-radius: 8px;
 	background-color: #d4a976;
 	color: #3a3231;
 	font-family: "roboto";
+	width: 30%;
 	padding: 0 1em;
 }
 
