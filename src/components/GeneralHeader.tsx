@@ -12,7 +12,7 @@ function GeneralHeader() {
 				<nav className="navbar-header">
 					<NavLink to="/">Home</NavLink>
 					<NavLink to="/pages/Mercenaries">Mercenaries</NavLink>
-					<NavLink to="/pages/MercenaryDetails">Mercenary Details</NavLink>
+					<NavLink to="/pages/NosMissions">Nos missions</NavLink>
 					<NavLink to="/pages/Recrutment">Recruitment</NavLink>
 					<NavLink to="/pages/About">About</NavLink>
 					<NavLink to="/pages/Contact">Contact</NavLink>

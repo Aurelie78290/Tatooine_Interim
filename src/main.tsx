@@ -9,8 +9,8 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Mercenaries from "./pages/Mercenaries.tsx";
-import MercenaryDetails from "./pages/MercenaryDetails.tsx";
 import Recrutment from "./pages/Recrutment.tsx";
+import NosMissions from "./pages/NosMissions.tsx";
 
 const router = createBrowserRouter([
 	{
@@ -25,8 +25,8 @@ const router = createBrowserRouter([
 				element: <Mercenaries />,
 			},
 			{
-				path: "/pages/MercenaryDetails",
-				element: <MercenaryDetails />,
+				path: "/pages/NosMissions",
+				element: <NosMissions />,
 			},
 			{
 				path: "/pages/Recrutment",
