@@ -41,7 +41,7 @@ function Mercenaries() {
 				background="../src/assets/bgHome.jpg"
 			/>
 			<section className="mercenaries-section">
-				<h1>Registre des Mercenaires</h1>
+				<h2>Registre des Mercenaires</h2>
 				<div className="search-section">
 					<div className="search-filters">
 						<input
@@ -116,19 +116,13 @@ function Mercenaries() {
 						<button className="modal-close" onClick={closeModal}>
 							×
 						</button>
-						<h2>Demander plus d'infos sur le recrutement</h2>
+						<h2>Demander plus d'informations sur le recrutement</h2>
 						<p className="modal-mercenary-name">{selectedMercenary.name}</p>
 						<p>Vous souhaitez en savoir plus sur ce mercenaire ?</p>
 						<div className="modal-actions">
-							<button className="modal-btn modal-btn-primary">
+							<Link to="/pages/Contact" className="modal-btn modal-btn-primary">
 								Contacter le recruteur
-							</button>
-							<button
-								className="modal-btn modal-btn-secondary"
-								onClick={closeModal}
-							>
-								Annuler
-							</button>
+							</Link>
 						</div>
 					</div>
 				</div>
