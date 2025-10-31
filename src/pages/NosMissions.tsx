@@ -2,29 +2,52 @@ import CardRecrutment from "../components/CardRecrutment";
 import Hero from "../components/Hero";
 
 const dataCardPrez = {
-	titreh2: "Nos Missions",
+	titreh2: "Protection rapprochée",
 	imgSrc:
 		"https://www.okiwoki.com/images/produits/parodies-cinema/i-want-you-pull-enfant-noir-h-11-12-ans_2.jpg",
 	imgAlt: "Darth Vador",
-	titreh3: "Vous souhaitez nous rejoindre ?",
+
 	paragraphe:
-		"Chez Tatooine Intérim, on ne cherche pas des héros... juste des gens qui savent tirer droit (ou presque). Si tu as survécu à une cantina un vendredi soir, tu as déjà l’expérience requise. Blaster rouillé, droïde grincheux ou sabre laser d’occasion ? Pas de souci, on recrute tout ce qui respire — ou bippe. Rejoins notre équipe et gagne plus de crédits qu’un contrebandier chanceux !",
+		"Suivi de Présence Prioritaire,	Accompagnement Opérationnel Dédié, Supervision de Zone Restreinte, Maintien de Proximité Sécurisée",
 	buttonText: "Contactez-nous",
-	buttonLink: "",
+	buttonLink: "/pages/Contact",
 	reverse: false,
 };
 
 const dataCardPrez2 = {
-	titreh2: "Carrière",
+	titreh2: "Pilotes privés & Transferts",
 	imgSrc:
 		"https://cdnph.upi.com/sv/ph/og/i/7291480971867/2016/1/14809720545897/v1.5/Texas-police-try-to-teach-Stormtrooper-to-shoot-in-recruitment-video.jpg",
 	imgAlt: "Storm trooper",
-	titreh3: "L'évolution professionnel chez Tatooine Interim",
 	paragraphe:
-		"Chez Tatooine Intérim, ton avenir ne se limite pas à tirer sur des Jawas pour quelques crédits. Commence simple, avec un blaster d’occasion, et grimpe les échelons jusqu’à chef d’escouade interstellaire — ou maître du café, selon ton destin. Grâce à notre programme de formation express, tu apprendras à viser, négocier et survivre aux réunions avec des Hutts. Alors, prêt à transformer ton job de mercenaire en véritable légende galactique ?",
+		"Relocalisation Stratégique Réalignement Sectoriel	Éloignement Temporaire	Coordination de Trajectoire",
 	buttonText: "Contactez-nous",
-	buttonLink: "/pages/Mercenaries",
-	reverse: true,
+	buttonLink: "/pages/Contact",
+	reverse: false,
+};
+
+const dataCardPrez3 = {
+	titreh2: "Missions Diplomatiques",
+	imgSrc:
+		"https://cdnph.upi.com/sv/ph/og/i/7291480971867/2016/1/14809720545897/v1.5/Texas-police-try-to-teach-Stormtrooper-to-shoot-in-recruitment-video.jpg",
+	imgAlt: "Storm trooper",
+	paragraphe:
+		"Mandat de gestion des parties prenantes,	Stabilisation de factions antagonistes,	Harmonisation des Intérêts Sectoriels,	Médiation de Transition Opérationnelle",
+	buttonText: "Contactez-nous",
+	buttonLink: "/pages/Contact",
+	reverse: false,
+};
+
+const dataCardPrez4 = {
+	titreh2: "Opérations à confidentialité renforcée",
+	imgSrc:
+		"https://cdnph.upi.com/sv/ph/og/i/7291480971867/2016/1/14809720545897/v1.5/Texas-police-try-to-teach-Stormtrooper-to-shoot-in-recruitment-video.jpg",
+	imgAlt: "Storm trooper",
+	paragraphe:
+		"réaffectation d'actifs et de valeurs,	Audit de Réassignation Sélective,	Réaffectation Temporaire ou définitive de Ressources Humaines,	Transfert Prioritaire de Personnel,	Programme de Déploiement Hors-Réseau, Dossier de Mise en Quarantaine Contractuelle,	Mandat de Réorganisation de Présence Individuelle,	Opération de Relocalisation Confidentielle,	Intervention de Réévaluation Stratégique des Effectifs",
+	buttonText: "Contactez-nous",
+	buttonLink: "/pages/Contact",
+	reverse: false,
 };
 
 function NosMissions() {
@@ -37,8 +60,10 @@ function NosMissions() {
 			/>
 			<CardRecrutment dataCardPrez={dataCardPrez} />
 			<CardRecrutment dataCardPrez={dataCardPrez2} />
+			<CardRecrutment dataCardPrez={dataCardPrez3} />
+			<CardRecrutment dataCardPrez={dataCardPrez4} />
 		</div>
 	);
 }
 
-export default Recrutment;
+export default NosMissions;
