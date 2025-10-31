@@ -41,4 +41,4 @@ function NosMissions() {
 	);
 }
 
-export default Recrutment;
+export default NosMissions;
