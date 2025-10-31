@@ -37,12 +37,12 @@ a{ color: var(--link); font-weight: 600; text-decoration: none;}
 a:hover{ color: var(--linkv);}
 
 /*button*/
-button{background-color: var(--link); border:none; padding: 1rem 2rem; color: #fff; margin: .5rem 1rem; border-radius: 20px;}
+button{background-color: var(--link); border:none; padding: 1rem 4rem; color: #fff; margin: .5rem 1rem; border-radius: 20px;}
 button:hover{background-color: var(--linkv);}
 
 /*text*/
 h1{font-size: clamp(1rem, -1.6563rem + 8.5vw, 6.125rem); font-family: "Orbitron", system-ui, -apple-system, Segoe UI, sans-serif;}
-h2{font-family:"Orbitron",sans-serif; font-size: var(--fs-600)}
+h2{font-family:"Orbitron",sans-serif; font-size: clamp(1.5rem, 3vw, 2.5rem); margin: 3rem auto; text-align: center; }
 h3{font-family:"Orbitron",sans-serif; font-size: var(--fs-400)}
 h4{}
 p{}

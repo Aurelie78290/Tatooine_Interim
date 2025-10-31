@@ -49,9 +49,11 @@
 }
 
 .card_cta  {
-    grid-area:cta; justify-self:start;
-    padding:.6rem 1rem; border:0; border-radius:999px;
-    background: var(--link); color:#fff; font-weight:700;
+    grid-area:cta; 
+    justify-self:start;
+    background: var(--link); 
+    color:#fff; 
+    font-weight:700;
 }
 
 .card_cta:hover{ background: var(--linkv); }
@@ -114,6 +116,19 @@
     object-fit: cover; 
     object-position: center; 
     display:block;
+}
+
+.card,
+.c img,
+.d img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover,
+.c:hover img,
+.d:hover img {
+  transform: scale(1.02);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.4);
 }
 
 /* responsive */
