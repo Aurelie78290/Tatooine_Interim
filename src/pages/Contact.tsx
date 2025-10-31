@@ -54,6 +54,7 @@ function Contact() {
                 background={bgHome}/>
             <div className="detail-form">
 				<section>
+				<p>Pour toute demande de service (protection, sabotage, 'négociation') ou pour déposer votre candidature de 'consultant', détaillez votre requête ici. Les transmissions sont (relativement) sécurisées.<br/><br/>N'oubliez pas de verser le 'tribut' initial pour activer la mission. Les tarifs ne sont pas négociables, et la seule monnaie locale qu'on accepte, c'est le Crédit.</p>
                 </section>
 				<form className="form" onSubmit={handleSubmit}>
                     <div>
