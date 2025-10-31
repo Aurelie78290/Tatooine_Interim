@@ -7,7 +7,7 @@ function GeneralHeader() {
 		<header className="site-header">
 			<div className="container-header">
 				<NavLink to="/" className="logo-header-link">
-					<img src="../src/assets/logo.png" alt="" className="logo-header" />
+					<img src="../src/assets/logv2.png" alt="" className="logo-header" />
 				</NavLink>
 				<nav className="navbar-header">
 					<NavLink to="/Home">Home</NavLink>
