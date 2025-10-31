@@ -1,23 +1,20 @@
-import { useState } from "react";
-import { Link, Outlet } from "react-router";
+import { Outlet } from "react-router";
 import { DataProvider } from "./components/DataProvider";
 
+import GeneralHeader from "./components/GeneralHeader";
+import Footer from "./components/Footer";
 import "./App.css";
 
 function App() {
 	return (
 		<DataProvider>
-				<nav>
-					<Link to="/">Home</Link>
-					<Link to="/pages/Mercenaries">Mercenaries</Link>
-					<Link to="/pages/MercenaryDetails">Mercenary Details</Link>
-					<Link to="/pages/Recrutment">Recrutment</Link>
-					<Link to="/pages/About">About</Link>
-					<Link to="/pages/Contact">Contact</Link>
-				</nav>
-				<main>
-					<Outlet />
-				</main>
+			<nav>
+				<GeneralHeader />
+			</nav>
+			<main>
+				<Outlet />
+			</main>
+			<Footer />
 		</DataProvider>
 	);
 }
