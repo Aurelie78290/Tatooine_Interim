@@ -25,6 +25,7 @@ function Card () {
       <h3> {data.name}</h3>
       <p>{data.homeworld}</p>
       <p>{data.species}</p>
+    
     {/* //button// 
     // demander plus d'informations pour le recrutement */}
     </div>
