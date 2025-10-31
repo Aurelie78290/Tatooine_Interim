@@ -1,7 +1,8 @@
-button {
+
+.button-none {
 	display: none;
 }
-h3 {
+.nos-missions h3 {
 	display: none;
 }
 

@@ -10,11 +10,11 @@ function GeneralHeader() {
 					<img src="../src/assets/logv2.png" alt="" className="logo-header" />
 				</NavLink>
 				<nav className="navbar-header">
-					<NavLink to="/Home">Home</NavLink>
-					<NavLink to="/pages/Mercenaries">Mercenaries</NavLink>
-					<NavLink to="/pages/NosMissions">Nos missions</NavLink>
-					<NavLink to="/pages/Recrutment">Recruitment</NavLink>
-					<NavLink to="/pages/About">About</NavLink>
+					<NavLink to="/Home">Accueil</NavLink>
+					<NavLink to="/pages/Mercenaries">Mercenaires</NavLink>
+					<NavLink to="/pages/NosMissions">Missions</NavLink>
+					<NavLink to="/pages/Recrutment">Recrutement</NavLink>
+					<NavLink to="/pages/About">Nous</NavLink>
 					<NavLink to="/pages/Contact">Contact</NavLink>
 				</nav>
 			</div>

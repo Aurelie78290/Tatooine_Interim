@@ -71,10 +71,10 @@ function NosMissions() {
 				subtitle="Une mandale ou rien"
 				background="../src/assets/bgHome.jpg"
 			/>
-			<CardRecrutment dataCardPrez={dataCardPrez} />
-			<CardRecrutment dataCardPrez={dataCardPrez2} />
-			<CardRecrutment dataCardPrez={dataCardPrez3} />
-			<CardRecrutment dataCardPrez={dataCardPrez4} />
+			<CardRecrutment display={false} dataCardPrez={dataCardPrez} />
+			<CardRecrutment display={false} dataCardPrez={dataCardPrez2} />
+			<CardRecrutment display={false} dataCardPrez={dataCardPrez3} />
+			<CardRecrutment display={false} dataCardPrez={dataCardPrez4} />
 		</div>
 	);
 }

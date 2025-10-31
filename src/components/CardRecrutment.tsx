@@ -14,9 +14,10 @@ interface dataCardPrezI {
 
 interface CardRecrutmentI {
 	dataCardPrez: dataCardPrezI;
+	display:boolean;
 }
 
-function CardRecrutment({ dataCardPrez }: CardRecrutmentI) {
+function CardRecrutment({ dataCardPrez, display }: CardRecrutmentI) {
 	const {
 		titreh2,
 		imgSrc,
@@ -41,7 +42,7 @@ function CardRecrutment({ dataCardPrez }: CardRecrutmentI) {
 					<h3>{titreh3}</h3>
 					<p>{paragraphe}</p>
 
-					<button onClick={() => navigate(buttonLink)} type="button">
+					<button className={display ? "" : "button-none"}  onClick={() => navigate(buttonLink)} type="button">
 						{buttonText}
 					</button>
 				</article>
