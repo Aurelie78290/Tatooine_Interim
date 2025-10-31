@@ -1,4 +1,8 @@
 import Testimonial, { type TestimonialItem } from "../components/Testimonial";
+import Accordeon from "../components/Accordeon";
+import Hero from "../components/Hero";
+import bgHome from "../assets/bgHome.jpg";
+import "./About.css";
 
 const testimonials: TestimonialItem[] = [
   {
@@ -34,12 +38,26 @@ const testimonials: TestimonialItem[] = [
 function About() {
 	return (
 		<>
-		<h1>About page</h1>
+					<Hero
+				title="A propos"
+				subtitle="On n'est pas des sauvages quand meme"
+				background={bgHome}
+			/>
+			<div className="titre">
+				<h2>Foire a questions debiles</h2>
+				<p>
+					C'est en posant des questions qu'on pense qu'on va apprendre des choses mais en realite
+					<br /> on finira toujours par aller se coucher un peu plus bete que l'on n'est deja triste la vie.
+				</p>
+			</div>
+			<Accordeon />
+
 		<Testimonial 
 		title="Temoignage des clients morts"
 		subtitle="Parce que la mort c'est bien, surtout quand on n'a pas de credit!"
 		items={testimonials} />
 		</>
+
 	);
 }
 
