@@ -75,6 +75,7 @@ body {
 
 .reset-button:hover {
 	color: #3a3231;
+	background-color: #9ca6a9;
 }
 
 .mercenary-GlobalCard {
@@ -84,22 +85,20 @@ body {
 	justify-content: center;
 	text-align: center;
 	min-height: 180px;
-	width: 200px;
+	width: 240px;
 	background-color: #9ca6a9;
 	gap: 0.5em;
 	border: none;
 	border-radius: 8px;
 	overflow: hidden;
-	box-shadow: 0 0 8px rgba(245, 216, 92, 0.15);
 	transition:
 		transform 0.3s ease,
 		box-shadow 0.5s ease;
 	position: relative;
-	animation: saber-glow 5s ease-in-out infinite;
 
 	img {
 		margin-top: 1rem;
-		width: 180px;
+		width: 200px;
 		height: 240px;
 		object-fit: cover;
 		object-position: center top;
@@ -110,12 +109,14 @@ body {
 	h2 {
 		font-size: 1.2rem;
 		color: #3a3231;
+		margin: 1em 0 0.5em 0;
 	}
 
 	p {
 		font-size: 0.9rem;
 		color: #4c5051;
 		font-family: "roboto";
+		margin: 0 0 1em 0;
 	}
 
 	button {
@@ -171,4 +172,131 @@ body {
 			0 0 35px rgba(245, 216, 92, 0.25),
 			0 0 60px rgba(245, 216, 92, 0.15);
 	}
+}
+
+.modal-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+	animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.modal-content {
+	background: white;
+	padding: 2rem;
+	border-radius: 12px;
+	max-width: 500px;
+	width: 90%;
+	position: relative;
+	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+	animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+	from {
+		transform: translateY(50px);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+.modal-close {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	background: none;
+	border: none;
+	font-size: 2rem;
+	cursor: pointer;
+	color: #666;
+	line-height: 1;
+	padding: 0;
+	width: 30px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	transition: all 0.2s;
+}
+
+.modal-close:hover {
+	background-color: #f0f0f0;
+	color: #333;
+}
+
+.modal-content h2 {
+	margin-top: 0;
+	margin-bottom: 1rem;
+	color: #333;
+	font-size: 1.5rem;
+}
+
+.modal-mercenary-name {
+	font-weight: bold;
+	color: #d4af37;
+	font-size: 1.2rem;
+	margin-bottom: 1rem;
+}
+
+.modal-content p {
+	color: #666;
+	line-height: 1.6;
+	margin-bottom: 1.5rem;
+}
+
+.modal-actions {
+	display: flex;
+	gap: 1rem;
+	margin-top: 2rem;
+}
+
+.modal-btn {
+	flex: 1;
+	padding: 0.75rem 1.5rem;
+	border: none;
+	border-radius: 6px;
+	font-size: 1rem;
+	cursor: pointer;
+	transition: all 0.3s;
+	font-weight: 500;
+}
+
+.modal-btn-primary {
+	background-color: #d4af37;
+	color: white;
+}
+
+.modal-btn-primary:hover {
+	background-color: #b8941f;
+	transform: translateY(-2px);
+	box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+}
+
+.modal-btn-secondary {
+	background-color: #f0f0f0;
+	color: #666;
+}
+
+.modal-btn-secondary:hover {
+	background-color: #e0e0e0;
 }
