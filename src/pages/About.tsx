@@ -24,7 +24,7 @@ const testimonials: TestimonialItem[] = [
     text:
       "'J'ai ete enleve, on m'a retire quatre doigts. Douleur garanti pour que je crache le morceau !'",
     name: "Plazjenk Pani",
-    role: "Eneleve pour massacre des carottes",
+    role: "Enleve pour massacre des carottes",
     avatarSrc: "https://mymodernmet.com/wp/wp-content/uploads/archive/Li60DeDZNI8eVDKi66HB_StarWarsCat2.jpeg",
     avatarAlt: "Plazjenk Pani",
   },
