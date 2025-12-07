@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-
 ::before,
 *::after {
 	box-sizing: border-box;
@@ -16,8 +14,7 @@ body {
 }
 
 .site-header {
-	background: #3a3231;
-	font-family: "Roboto", sans-serif;
+	background: var(--bg);
 }
 
 .container-header {
@@ -27,7 +24,8 @@ body {
 }
 
 .logo-header {
-	height: 100px;
+	height: auto;
+	width: 40%;
 	padding: 0.8rem 1.6rem;
 }
 .navbar-header {
@@ -36,7 +34,7 @@ body {
 
 .navbar-header a {
 	position: relative;
-	color: #91644a;
+	color: var(--link);
 	text-decoration: none;
 	padding: 0.25rem 1rem;
 	font-weight: 900;
@@ -44,7 +42,7 @@ body {
 }
 
 .navbar-header a:hover {
-	color: #645148;
+	color: var(--unknow);
 }
 
 /* Active link underline */
@@ -64,14 +62,14 @@ body {
 }
 
 .navbar-header a:hover::after {
-	background: #645148;
+	background: var(--unknow);
 	transform: scaleX(1);
 }
 .navbar-header a.active {
-	color: #d4a976;
+	color: var(--linkv);
 }
 .navbar-header a.active::after {
-	background: #d4a976;
+	background: var(--linkv);
 	transform: scaleX(1);
 }
 
