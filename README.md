@@ -1,73 +1,58 @@
-# React + TypeScript + Vite
+# 🌵 Tatooine Intérim
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Plateforme de recrutement fictive inspirée de l’univers **Star Wars**, développée lors d’un **hackathon**.
 
-Currently, two official plugins are available:
+Le concept : mettre en relation des employeurs avec des **mercenaires intergalactiques** pour des missions temporaires sur Tatooine… et au-delà 🌌
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🎯 Contexte du projet
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Projet réalisé dans le cadre d’un **hackathon en école de développement web**
+- Travail en **équipe**, avec contraintes de temps (48h)
+- Objectif : concevoir une application fonctionnelle de bout en bout
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🧠 Concept
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Les recruteurs recherchent des mercenaires en fonction de leur besoin
+- Les mercenaires peuvent postuler
+- Interface volontairement décalée et immersive
+- Univers narratif utilisé comme fil conducteur UX
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🛠️ Stack technique
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Frontend
+- ⚛️ **React**
+- 🟦 **TypeScript**
+- 🎨 CSS / UI custom
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Backend (API séparée)
+- 🟢 **Node.js**
+- 🚂 **Express**
+- API REST pour la gestion des profils et missions
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## 🔄 Fonctionnalités principales
+
+- ✔️ Liste des mercenaires
+- ✔️ Fiches profils
+- ✔️ Missions disponibles
+- ✔️ Interaction frontend / API
+- ✔️ Routing et gestion des états
+
+---
+
+## 👩‍💻 Objectifs pédagogiques
+
+Ce projet nous permis de :
+
+- travailler en équipe sur un temps court
+- gérer la communication frontend / backend
+- pratiquer React dans un contexte concret
+- apprendre à prioriser les fonctionnalités
+
